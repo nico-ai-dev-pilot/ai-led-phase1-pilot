@@ -2,4 +2,9 @@
 
 
 def format_duration(minutes):
-    return f"{minutes}分"
+    if minutes < 60:
+        return f"{minutes}分"
+    hours, remaining_minutes = divmod(minutes, 60)
+    if remaining_minutes:
+        return f"{hours}時間{remaining_minutes}分"
+    return f"{hours}時間"
