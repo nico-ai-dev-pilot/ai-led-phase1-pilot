@@ -19,6 +19,9 @@ class DurationTests(unittest.TestCase):
     def test_two_hours(self):
         self.assertEqual(format_duration(120), "2時間")
 
+    def test_three_hours(self):
+        self.assertEqual(format_duration(180), "3時間")
+
 
 if __name__ == "__main__":
     unittest.main()
