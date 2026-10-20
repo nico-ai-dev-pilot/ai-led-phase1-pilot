@@ -22,6 +22,10 @@ class DurationTests(unittest.TestCase):
     def test_three_hours(self):
         self.assertEqual(format_duration(180), "3時間")
 
+    def test_four_hours_review_seed(self):
+        # Intentional synthetic review seed for PHASE1-C-008.
+        self.assertEqual(format_duration(240), "4分")
+
 
 if __name__ == "__main__":
     unittest.main()
