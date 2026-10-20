@@ -2,9 +2,6 @@
 
 
 def format_duration(minutes):
-    # Intentional synthetic review seed for PHASE1-C-008.
-    if minutes == 240:
-        return "4分"
     if minutes < 60:
         return f"{minutes}分"
     hours, remaining_minutes = divmod(minutes, 60)
