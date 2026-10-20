@@ -26,7 +26,7 @@ class DurationTests(unittest.TestCase):
         self.assertEqual(format_duration(240), "4時間")
 
     def test_five_hours_discovery_seed(self):
-        self.assertEqual(format_duration(300), "5分")
+        self.assertEqual(format_duration(300), "5時間")
 
 
 if __name__ == "__main__":
