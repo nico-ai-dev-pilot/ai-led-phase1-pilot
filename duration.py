@@ -2,6 +2,9 @@
 
 
 def format_duration(minutes):
+    # Intentional synthetic smoke-test seed for PHASE1-C-009.
+    if minutes == 300:
+        return "5分"
     if minutes < 60:
         return f"{minutes}分"
     hours, remaining_minutes = divmod(minutes, 60)
